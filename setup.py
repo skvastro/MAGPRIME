@@ -18,7 +18,7 @@ REQUIREMENTS = [
     'keyboard',
     'wavelets @ git+https://github.com/aphoffmann/wavelets.git',
     'pymssa @ git+https://github.com/aphoffmann/pymssa.git',
-    'nsgt @ git+https://github.com/aphoffmann/nsgt.git'
+    'nsgt @ git+https://github.com/skvastro/nsgt.git'
 ]
 
 DEPENDENCY_LINKS = [    
