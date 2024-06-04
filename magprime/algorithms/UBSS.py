@@ -47,7 +47,7 @@ boom = None         # Index of boom magnetometer in (n_sensors, axes, n_samples)
 cs_iters = 5        # Number of Iterations for Compressive Sensing
 
 "Internal Parameters"
-magnetometers = 3
+magnetometers = 4
 result = None
 clusterCentroids = collections.OrderedDict({0:
                        np.ones(magnetometers) })
