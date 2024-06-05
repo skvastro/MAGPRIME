@@ -33,5 +33,5 @@ def load_swarm_data(start = 160000, stop = 165000):
 def load_quadmag_data():
     file_path = pkg_resources.resource_filename('magprime.utility.SPACE_DATA', 'quadmag_data.txt')
     B = np.loadtxt(file_path, dtype=float, delimiter=',' , usecols=(2,3,4,5,6,7,8,9,10,11, 12, 13))
-    return(B)
+    return(B.T)
 
