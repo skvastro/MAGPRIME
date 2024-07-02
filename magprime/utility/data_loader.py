@@ -38,7 +38,7 @@ def load_quadmag_data():
     B2 = np.vstack((S1[4], S1[5], S1[6]))
     B3 = np.vstack((S1[7], S1[8], S1[9]))
     B4 = np.vstack((S1[10], S1[11], S1[12]))
-    quadmag = np.stack((B1, B2, B3, B4))
+    quadmag = np.vstack((B1, B2, B3, B4))
     return(quadmag)
     
 
