@@ -39,7 +39,7 @@ def load_quadmag_data():
     swarm = np.array([np.fromstring(r[i][1:-1], dtype=float, sep=' ') for i in range(1, r.shape[0])]).T[:,start:stop]
         
     file_path = pkg_resources.resource_filename('magprime.utility.SPACE_DATA', 'quadmag_data.txt')
-    S = np.loadtxt(file_path, dtype=float, delimiter=',' , usecols=(1,2,3,4,5,6,7,8,9,10,11,12,13))
+    S = np.loadtxt(file_path, dtype=float, delimiter=',' , usecols=(2,3,4,5,6,7,8,9,10,11,12,13))
     S1 = S.T
     B1 = np.vstack((S1[0], S1[1], S1[2])) + swarm
     B2 = np.vstack((S1[3], S1[4], S1[5])) + swarm
