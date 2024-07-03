@@ -44,7 +44,7 @@ def load_quadmag_data():
     B1 = np.vstack((S1[0], S1[1], S1[2])) + swarm
     B2 = np.vstack((S1[3], S1[4], S1[5])) + swarm
     B3 = np.vstack((S1[6], S1[7], S1[8])) + swarm
-    B4 = np.vstack((S1[9], S1[10], S1[11])) +swarm
+    B4 = np.vstack((S1[9], S1[10], S1[11])) + swarm
     quadmag = np.stack((B1, B2, B3, B4))
     return(quadmag)
     
