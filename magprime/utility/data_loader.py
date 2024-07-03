@@ -22,7 +22,7 @@ def load_michibiki_data():
     return(michibiki)
 
 
-def load_swarm_data(start = 160000, stop = 169736):
+def load_swarm_data(start = 160000, stop = 169737):
     "Import 50 Hz magnetometer residual data"
     file_path = pkg_resources.resource_filename('magprime.utility.SPACE_DATA', 'Swarm_MAGA_HR_20150317_0900.csv')
     df=pd.read_csv(file_path, sep=',',header=None)
@@ -32,7 +32,7 @@ def load_swarm_data(start = 160000, stop = 169736):
 
 def load_quadmag_data():
     start = 160000
-    stop = 169736
+    stop = 169737
     file_path = pkg_resources.resource_filename('magprime.utility.SPACE_DATA', 'Swarm_MAGA_HR_20150317_0900.csv')
     df=pd.read_csv(file_path, sep=',',header=None)
     r = df[10]
